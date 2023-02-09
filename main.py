@@ -128,6 +128,7 @@ def main():
 
     # Build the decision tree using the training data
     tree = build_tree(train_attributes, train_target)
+    print(f'Decision tree:\n{tree}')
 
     # Use the decision tree to make predictions on the test data
     most_common_class = train_target.value_counts().index[0]
